@@ -1,0 +1,274 @@
+body {
+	background: #eeede8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,input[type=submit] {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	width: 870px;
+	margin: 0 auto;
+}
+
+.wrapper p {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.wrapper span.intro {
+	font-weight: 700;
+}
+
+.header-bar {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.header-bar hgroup {
+	display: none;
+}
+
+.header-bar img {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.nav-wrap ul {
+	width: 100%;
+	border-top: 1px solid #bab8ae;
+	border-bottom: 1px solid #bab8ae;
+	margin: 0;
+	text-align: center;
+}
+
+.nav-wrap ul li {
+	list-style: none outside none;
+    min-height: 10px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-wrap ul li a {
+	font-family: 'Montserrat', sans-serif;
+	background: white;
+	text-transform: uppercase;
+	color: #bab8ae;
+	line-height: 40px;
+	padding: 10px 20px;
+	position: relative;
+}
+
+
+.nav-wrap ul li.contact a {
+	padding-left: 40px;
+}
+
+.nav-wrap ul li.contact:before {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	content: "\f003";
+	bottom: 14px;
+	left: 20px;
+	font-family: FontAwesome;
+	font-size: 11px;
+	color: #bab8ae;
+	z-index: 1;
+}
+
+.nav-wrap ul li a:hover {
+	padding-top: 20px;
+	background: #605e55;
+	background-image: url(../img/nav-hover-bg.png);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	color: white;
+	border-top: 2px solid white;
+}
+
+.intro-statement {
+	text-align: center;
+	padding: 40px 100px;
+}
+
+.intro-statement hgroup h2 {
+	font-weight: 700;
+	font-size: 32px;
+	color: #605e55;
+	line-height: 36px;
+}
+
+.intro-statement hgroup h3 {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #605e55;
+}
+
+.tools {
+	background: #bab8ae;
+	min-height: 440px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	padding-bottom: 60px;
+}
+
+.tool-col1, .tool-col2, .tool-col3 {
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	margin: 0 30px;
+	text-align: center;
+}
+
+.tool-col1 {
+	margin-left: 73px;
+}
+
+.tools .img-wrap {
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background-image: url(../img/tools-bg.jpg);
+	background-position: center center;
+	background-size: 210px;
+	border: 5px solid white;
+	position: relative;
+	top: -100px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	text-align: center;
+	display: table;
+	padding: 0 20px;
+	margin-bottom: -80px;
+}
+
+.tools .img-wrap h4 {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	text-shadow: 1px 0px 2px #44423c;
+}
+
+a.button1 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+	background: #cccabe;
+	padding: 8px 15px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+a.button1:hover {
+	background: #605e55;
+}
+
+.about-us {
+	background: none repeat scroll 0 0 #FCB915;
+    height: 200px;
+    margin-bottom: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+img.light-bulb {
+	left: 58px;
+    max-width: 234px;
+    position: absolute;
+    top: -200px;
+}
+
+.about-text {
+	width: 65%;
+	float: right;
+	color: white;
+	padding-right: 30px;
+}
+
+.about-text h4, .signup-wrap h4 {
+	color: white;
+	font-weight: 700;
+	font-size: 26px;
+	margin-top: 25px;
+}
+
+.signup-wrap h4 {
+	margin-top: 1em;
+	color: black;
+	display: inline-block;
+}
+
+.signup-wrap h5 {
+	display: inline;
+	margin-left: 1em;
+}
+
+.signup-wrap {
+	background: none repeat scroll 0 0 #FFFFFF;
+    margin-top: 0px;
+    position: relative;
+}
+
+.signup {
+	margin-top: 100px;
+	margin-bottom: 30px;
+	width: 485px;
+	text-align: right;
+}
+
+.signup h5 {
+	color: #605e55;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	font-size: 13px;
+}
+
+.signup h5 span {
+	font-size: 26px; 
+	font-weight: 700;
+}
+
+.footer {
+	width: 100%;
+	background: #605e55;
+	height: 77px;
+	position: relative;
+}
+
+.footer .wrapper {
+	position: relative;
+}
+
+.footer img {
+	left: 0;
+    max-width: 368px;
+    position: absolute;
+    top: 22px;
+}
+
+.button {
+	background-color: #FCB915;
+	color: white;
+}
+
+.button:hover {
+
+}
+
+.hide-in-modern-browsers
+{
+	display:none;
+}
+
