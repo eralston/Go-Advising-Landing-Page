@@ -219,6 +219,7 @@ img.light-bulb {
 	background: none repeat scroll 0 0 #FFFFFF;
     margin-top: 0px;
     position: relative;
+    width: 100%;
 }
 
 .signup {
@@ -249,6 +250,7 @@ img.light-bulb {
 
 .footer .wrapper {
 	position: relative;
+	width: 100%;
 }
 
 .footer img {
