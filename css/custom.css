@@ -37,78 +37,6 @@ h1,h2,h3,h4,h5,input[type=submit] {
 	margin: 0 auto;
 }
 
-/* Navigation */
-
-/*
-
-.nav-wrap ul {
-	width: 100%;
-	border-top: 1px solid #bab8ae;
-	border-bottom: 1px solid #bab8ae;
-	margin: 0;
-	text-align: center;
-	height: 43px;
-}
-
-.nav-wrap ul li {
-	list-style: none outside none;
-    min-height: 10px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-.nav-wrap ul li a {
-	font-family: 'Montserrat', sans-serif;
-	background: white;
-	text-transform: uppercase;
-	color: #bab8ae;
-	line-height: 40px;
-	padding: 10px 20px;
-	position: relative;
-}
-
-
-.nav-wrap ul li.contact a {
-	padding-left: 40px;
-}
-
-.nav-wrap ul li.contact:before {
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	content: "\f003";
-	bottom: 14px;
-	left: 20px;
-	font-family: FontAwesome;
-	font-size: 11px;
-	color: #bab8ae;
-	z-index: 1;
-}
-
-.nav-wrap ul li a:hover {
-	padding-top: 20px;
-	background: #605e55;
-	background-image: url(../img/nav-hover-bg.png);
-	background-size: 20px;
-	background-repeat: no-repeat;
-	background-position: center top;
-	color: white;
-	border-top: 2px solid white;
-}
-*/
-
-/* Nav Mobile Styles */
-
-/*
-
-@media (max-width: 540px) {
-	.nav-wrap ul { 
-		display: none;
-	}
-}*/
-
-
 
 /* Begin Responsive Menu Style */
 
@@ -177,7 +105,7 @@ nav[role="custom-dropdown"] ul > li > a {
   text-transform: uppercase;
   color: #bab8ae;
   line-height: 40px;
-  padding: 10px 20px;
+  padding: 10px 20px 9px;
   position: relative;
 }
 
@@ -230,7 +158,7 @@ nav[role="custom-dropdown"] ul > li.contact:before {
     font-size: 1.1em;
     margin: 0;
     border: 0.15em solid rgba(60, 60, 60, 0.2);
-    background-image: url(https://raw.github.com/TimPietrusky/mantisbt-is-a-rockstar/master/rockstar/img/bg_dark_grey.png);
+    background-image: url(../img/mob_nav_bg.png);
   }
   nav[role="custom-dropdown"] label:after {
     position: absolute;
@@ -271,14 +199,16 @@ nav[role="custom-dropdown"] ul > li.contact:before {
 	color: white;
 	border-top: none;
   }
-  
-  /*
   nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
     position: absolute;
     right: .25em;
-    content: "\203A";
-    font: bold 1.4em sans-serif;
-  }*/
+    content: "\f101";
+    font-weight: normal;
+    font-family: FontAwesome;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:hover:after {
+    font-weight: normal !important;
+  }
 }
 
 
