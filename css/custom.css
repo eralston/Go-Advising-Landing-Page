@@ -201,7 +201,8 @@ nav[role="custom-dropdown"] ul > li.contact:before {
   }
   nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
     position: absolute;
-    right: .25em;
+    right: 14px;
+    top: 6px;
     content: "\f101";
     font-weight: normal;
     font-family: FontAwesome;
@@ -220,6 +221,14 @@ nav[role="custom-dropdown"] ul > li.contact:before {
 .intro-statement {
 	text-align: center;
 	padding: 40px 100px;
+	margin-bottom: 100px;
+}
+
+@media screen and (max-width: 44em) {
+	.intro-statement {
+		text-align: center;
+		padding: 40px 40px;
+	}	
 }
 
 .intro-statement hgroup h2 {
@@ -236,24 +245,20 @@ nav[role="custom-dropdown"] ul > li.contact:before {
 	color: #605e55;
 }
 
-.tools {
+/* Tools Area */
+
+.tools-wrap {
+	width: 100%;
 	background: #bab8ae;
+}
+
+.tools {
 	min-height: 440px;
 	margin-top: 100px;
 	margin-bottom: 30px;
 	padding-bottom: 60px;
-}
-
-.tool-col1, .tool-col2, .tool-col3 {
-	display: inline-block;
-	width: 200px;
-	vertical-align: top;
-	margin: 0 30px;
-	text-align: center;
-}
-
-.tool-col1 {
-	margin-left: 73px;
+	position: relative;
+	top: -100px;
 }
 
 .tools .img-wrap {
@@ -265,14 +270,14 @@ nav[role="custom-dropdown"] ul > li.contact:before {
 	background-size: 210px;
 	border: 5px solid white;
 	position: relative;
-	top: -100px;
+	left: -10px;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	text-align: center;
 	display: table;
 	padding: 0 20px;
-	margin-bottom: -80px;
+	margin: 0 auto 15px auto;
 }
 
 .tools .img-wrap h4 {
@@ -299,6 +304,24 @@ a.button1 {
 a.button1:hover {
 	background: #605e55;
 }
+
+@media screen and (max-width: 44em) {
+	.tools .columns {
+		border-bottom: 1px solid #CCCABE;
+	    float: none !important;
+	    margin: 0 auto 30px;
+	    max-width: 500px;
+	    min-width: 80%;
+	    padding-bottom: 40px;
+	}
+	.tools .img-wrap {
+		left: 0;
+	}
+}
+
+
+
+/* About Area */
 
 .about-us {
 	background: none repeat scroll 0 0 #FCB915;
