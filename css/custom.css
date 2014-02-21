@@ -461,22 +461,21 @@ img.light-bulb {
 	max-width: 70%;
 }
 
+/* Footer Area */
+
 .footer {
 	width: 100%;
 	background: #605e55;
 	height: 77px;
 	position: relative;
-}
-
-.footer .wrapper {
-	position: relative;
+	text-align: center;
 }
 
 .footer img {
-	left: 0;
     max-width: 368px;
-    position: absolute;
-    top: 22px;
+    width: 100%;
+    position: relative;
+    top: 20px;
 }
 
 .button {
