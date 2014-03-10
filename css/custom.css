@@ -342,11 +342,13 @@ a.button1:hover {
 }
 
 img.light-bulb {
-	left: 5%;
 	width: 25%;
     max-width: 234px;
-    position: absolute;
-    top: -200px;
+    position: relative;
+    top: -200px !important;
+    display: inline-block;
+    margin-bottom: -300px;
+    margin-left: 5%;
 }
 
 .about-text {
@@ -355,17 +357,19 @@ img.light-bulb {
 
 @media screen and (min-width: 44em) {
 	.about-text {
-		padding-right: 30px;
-		padding-left: 30%;
+		float: right;
+		display: inline-block;
+		width: 70%;
 	}
 }
 
+/*
 @media screen and (max-width: 54em) {
 	img.light-bulb {
 		left: 3%;
 		top: -150px;
 	}
-}
+}*/
 
 @media screen and (max-width: 44em) {
 	.about-us {
