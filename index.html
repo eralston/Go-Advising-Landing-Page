@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8" />
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>GoAdvising.com | Tools &amp; Training for Trusted Advisors</title>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/foundation.css" />
@@ -11,7 +11,7 @@
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+<div class="wrapper">
 		<div class="row header-bar">
 			<div class="large-12 columns">
 				<hgroup>
@@ -21,15 +21,18 @@
 				<img src="img/goadvising-logo.png" alt="goadvising.com" title="goadvising.com">
 			</div>
 		</div><!--/.row-->
-
-		<div class="nav-wrap">
+		
+		<nav role="custom-dropdown">
+			<input type="checkbox" id="button">
+			<label for="button" onclick></label>
+    
 			<ul>
 				<li><a href="#tools">Tools</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#newsletter">Stay Informed</a></li>
 				<li class="contact"><a href="mailto:Info@GoAdvising.Com">Contact</a></li>
 			</ul>
-		</div><!--/.nav-wrap-->
+		</nav>
 
 		<div class="row intro-statement">
 			<div class="large-12 columns">
@@ -39,90 +42,90 @@
 				</hgroup>
 			</div>
 		</div><!--.intro-statement-->
-		<div id="tools"></div>
-
-		<div class="row tools">
-			<div class="tool-col1">
-				<div class="img-wrap">
-					<h4>Mobile</h4>
+		
+		<div class="tools-wrap">
+			<div class="row tools">
+				<div class="tool-col1 large-4 medium-4 columns">
+					<div class="img-wrap">
+						<h4>Mobile</h4>
+					</div>
+					<p><span class="intro">Inspired Questions</span> is a mobile app that asks questions about family &amp; wealth. Available Now.</p>
+					<a class="button1" href="http://www.inspired-questions.com" target="_blank" alt="Visit the Inspired Questions Website" title="Visit the Inspired Questions Website">Learn More</a>
 				</div>
-				<p><span class="intro">Inspired Questions</span> is a mobile app that asks questions about family &amp; wealth. Available Now.</p>
-				<a class="button1" href="http://www.inspired-questions.com" target="_blank" alt="Visit the Inspired Questions Website" title="Visit the Inspired Questions Website">Learn More</a>
-			</div>
-
-			<div class="tool-col2">
-				<div class="img-wrap">
-					<h4>Web</h4>
+	
+				<div class="tool-col2 large-4 medium-4 columns">
+					<div class="img-wrap">
+						<h4>Web</h4>
+					</div>
+					<p><span class="intro">GoAdvising.Com</span> is a forthcoming suite of cloud-based tools that will help you build trust and insight with your clients. It will profile your clients to measure progress, keep you in constant contact, and augment your professional life.</p>
 				</div>
-				<p><span class="intro">GoAdvising.Com</span> is a forthcoming suite of cloud-based tools that will help you build trust and insight with your clients. It will profile your clients to measure progress, keep you in constant contact, and augment your professional life.</p>
-			</div>
-
-			<div class="tool-col3">
-				<div class="img-wrap">
-					<h4>Education</h4>
+	
+				<div class="tool-col3 large-4 medium-4 columns">
+					<div class="img-wrap">
+						<h4>Education</h4>
+					</div>
+					<p><span class="intro">Advising Generations Certification</span> will prove you are an advisor ready to help perpetuate legacies. Compiling lessons learned over the years, Dave Specht will offer personalized training for working with multi-generational families.</p>
 				</div>
-				<p><span class="intro">Advising Generations Certification</span> will prove you are an advisor ready to help perpetuate legacies. Compiling lessons learned over the years, Dave Specht will offer personalized training for working with multi-generational families.</p>
-			</div>
-		</div><!--/.intro-statement-->
-
+			</div><!--/.tools-->
+		</div><!--/.tools-wrap-->
+		
 		<div class="about-us" id="about">
-			<img class="light-bulb" src="img/light-bulb.png" alt="About GoAdvising.com" title="About GoAdvising.com"/>
-			<div class="about-text">
-				<h4>About Us</h4>
-				<p><span class="intro">A small team working on big ideas.</span> Dave Specht, certified financial planner, consultant, and speaker, has spent years advising multi-generational family businesses. He's joined forces with designer Terry Carter and developer Erik Ralston to build a rigorous training system for professionals advising families, along with the next generation of web and mobile tools for trusted advisors.</p>
-			</div><!--/.about-text-->
+			<div class="row">
+				<img class="light-bulb" src="img/light-bulb.png" alt="About GoAdvising.com" title="About GoAdvising.com"/>
+				<div class="about-text large-12 columns">
+					<h4>About Us</h4>
+					<p><span class="intro">A small team working on big ideas.</span> Dave Specht, certified financial planner, consultant, and speaker, has spent years advising multi-generational family businesses. He's joined forces with designer Terry Carter and developer Erik Ralston to build a rigorous training system for professionals advising families, along with the next generation of web and mobile tools for trusted advisors.</p>
+				</div><!--/.about-text-->
+			</div><!--/.row-->
 		</div><!--/.about-us-->
 
-	</div><!--/.wrapper-->
-
-	<div class="signup-wrap" id="newsletter">
-		<div class="wrapper">
-			<div class="row">
-				<div class="large-12 columns">
-					<h4>Want To Know More?</h4><h5>Sign Up For Our Newsletter</h5>
-				</div>
-				<div class="signup row">
+	<div id="newsletter">
+	  <div class="signup-wrap" >
+		<div class="row">
+			<div class="signup-head large-12 columns">
+				<h4>Want To Know More?</h4><h5>Sign Up For Our Newsletter</h5>
+			</div><!--/.large-12 .columns-->
+		</div><!--/.row-->
+		
+		<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup" class="row">
+				<form action="http://GoAdvising.us3.list-manage.com/subscribe/post?u=6a8938269d837a7482c49326e&amp;id=61df4e83ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					
-					<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup" class="row">
-						<form action="http://GoAdvising.us3.list-manage.com/subscribe/post?u=6a8938269d837a7482c49326e&amp;id=61df4e83ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							
-							<div class="mc-field-group large-5 columns">
-								<label for="mce-NAME" class="hide-in-modern-browsers">Name</label>
-								<input type="text" value="" name="NAME" class="" id="mce-NAME" placeholder="Name">
-							</div>
-							<div class="mc-field-group large-5 columns">
-								<label for="mce-EMAIL" class="hide-in-modern-browsers">Email Address</label>
-								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail">
-							</div>
-							<div class="large-2 columns"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							<div id="mce-responses" class="clear large-12">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;"><input type="text" name="b_6a8938269d837a7482c49326e_61df4e83ea" value=""></div>
-							
-						</form>
+					<div class="mc-field-group large-5 columns">
+						<label for="mce-NAME" class="hide-in-modern-browsers">Name</label>
+						<input type="text" value="" name="NAME" class="" id="mce-NAME" placeholder="Name">
 					</div>
+					<div class="mc-field-group large-5 columns">
+						<label for="mce-EMAIL" class="hide-in-modern-browsers">Email Address</label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail">
+					</div>
+					<div class="large-2 columns"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					<div id="mce-responses" class="clear large-12">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;"><input type="text" name="b_6a8938269d837a7482c49326e_61df4e83ea" value=""></div>
+					
+				</form>
+			</div><!--/#mc_embed_signup .row-->
+	  <!--End mc_embed_signup-->
+		</div><!--/.signup-wrap-->
+	</div><!--/#newsletter-->
 
-					<!--End mc_embed_signup-->	
-				</div>
-			</div><!--.signup-->
-		</div><!--/.wrapper-->
-	</div><!--/.signup-wrap-->
+</div><!--/.wrapper-->
+
 	
 	<div class="footer">
 		<div class="wrapper">
-			<img src="img/footer-logo.png" alt="goadvising.com" title="goadvising.com"/>
+		  <div class="row">
+		    <div class="large-12 columns">
+				<img src="img/footer-logo.png" alt="goadvising.com" title="goadvising.com"/>
+		    </div><!--/.large-12 .columns-->
+		  </div><!--/.row-->
 		</div><!--/.wrapper-->
 	</div><!--/.footer-->
-
-	<script src="js/jquery.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script>
-	$(document).foundation();
-	</script>
-	<script>
+	
+    <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
